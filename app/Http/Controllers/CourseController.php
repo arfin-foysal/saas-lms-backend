@@ -1955,6 +1955,7 @@ class CourseController extends Controller
                             'mentor_id' => $value['mentor_id'],
                             'student_id' => $value['student_id'],
                             'is_active' => $value['is_active'],
+                            'created_at' => date('Y-m-d H:i:s'),
              
                         ];
                     }
@@ -2015,6 +2016,7 @@ class CourseController extends Controller
                 'course_student_mappings.mentor_id',
                 'course_student_mappings.student_id',
                 'course_student_mappings.is_active',
+                'course_student_mappings.created_at',
                 'courses.title as course_title',
                 'mentor_informations.name as mentor_name',
                 'student_informations.name as student_name'

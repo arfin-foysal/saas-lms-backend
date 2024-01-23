@@ -689,7 +689,7 @@ class ContentController extends Controller
             DB::beginTransaction();
             $excel_data = json_decode($request->excel_data, true);
             if ($excel_data) {
-                $qtn = [];
+                    
                 foreach ($excel_data as $key => $value) {
                     $qtn[] = [
                         'chapter_quiz_id' => $request->chapter_quiz_id,
